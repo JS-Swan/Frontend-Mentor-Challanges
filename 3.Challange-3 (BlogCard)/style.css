@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+    /* -- Yellow: hsl(47, 88%, 63%)
+
+- White: hsl(0, 0%, 100%)
+Weights: 500, 800
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%) */
+body{
+    background: hsl(47, 88%, 63%);
+    
+    height: 100vh;
+    width: 100%;
+    padding: 0 16px;
+}
+.Blog-card{
+    margin: 50px auto;
+    max-width: 350px;
+  width: 100%;
+  max-height: 600px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 8px 5px 1px;
+  border: 1px solid black;
+}
+.image-container img{
+    height: 100%;
+   width: 100%;
+   border-radius: 12px;
+}
+.tag{
+    font-weight: 800;
+    background: hsl(47, 88%, 63%);
+    padding: 8px 12px;
+    width: 30%;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+.date{
+    margin-top: 15px;
+    font-weight: 500;
+}
+.head{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.head:hover{
+    color: hsl(47, 88%, 63%);
+}
+.para{
+    margin-top: 15px;  
+    color: gray;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+.profile-section{
+    margin-top: 15px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-section img{
+    height: 50px;
+    width: 50px;
+}
+.profile-section h4{
+  font-weight: 800;
+}
+@media screen and (width < 600px){
+    .Blog-card{
+       width: 250px;
+      max-height: 500px;
+      padding: 18px;
+    }
+     .Blog-card{
+        margin: 50px auto;
+     }
+     .tag{
+        padding: 5px 10px;
+        width: 40%;
+        margin-top: 5px;
+      
+    } 
+    .date{
+        margin-top: 8px;
+    }
+    .head{
+        margin-top: 8px;
+        font-size: 18px;
+    }
+    .para{
+        margin-top: 8px;  
+    }
+    .profile-section{
+        margin-top: 10px; 
+        gap: 15px;
+    }
+    .profile-section img{
+        height: 40px;
+        width: 40px;
+    }
+}
