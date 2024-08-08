@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* please do read other people code & fix bug */
+body{
+    /* font-family: serif; */
+    background: hsl(30, 54%, 90%);
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.container{
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 700px;
+    border-radius: 15px;
+}
+.container img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* heading */
+.heading{
+    margin-top: 25px;
+}
+.heading h1{
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+}
+.heading p{
+    margin-top: 15px;
+    color: hsl(30, 10%, 34%);
+}
+/* time */
+.time{
+    background: hsl(330, 100%, 98%);
+    margin-top: 25px;
+    padding: 15px;
+}
+.time h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+}
+.time ul{
+    padding: 10px 0 0 25px;
+}
+.time ul li{
+    margin-bottom: 8px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 18px;
+}
+/* ingredient */
+.ingredient{
+    margin-top: 25px;
+    padding: 15px;
+}
+.ingredient h2{
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 10px;
+}
+.ingredient ul{
+    padding: 10px 0 0 25px;
+    margin-bottom: 25px;
+}
+.ingredient ul li{
+    margin-bottom: 8px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 18px;
+}
+hr{
+    color: rgba(235, 235, 235, 0.808);
+}
+/* ingredient */
+.instruction{
+    padding: 15px;
+}
+.instruction h2{
+    color: hsl(14, 45%, 36%);
+    
+}
+.instruction ul{
+    padding: 10px 0 0 25px;
+    list-style-type: decimal;
+
+}
+.instruction ul li{
+    margin-bottom: 8px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 18px;
+    line-height: 1.4;
+}
+/* Nutrition */
+.nutrition{
+    padding: 15px;
+    margin-top: 8px;
+}
+.nutrition h2{
+    color: hsl(14, 45%, 36%);  
+    margin-bottom: 10px;
+}
+.nutrition p,td{
+    color: hsl(30, 10%, 34%);
+}
+.nutrition table{
+    margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition td{
+    padding: 10px 15px;
+}
+.nutrition tr{
+    border-bottom: 1px solid silver;
+}
+.nutrition tr:last-child{
+    border: none;
+}
+.dense{
+    color: hsl(14, 45%, 36%); 
+    font-weight: 600;
+}
+/* responsive */
+@media screen and (width < 500px){
+    .container{
+        margin: 0 auto;
+        margin: -20px; 
+        /* Above is imp ,bug is it removes whole padding*/
+    }
+    .container img{
+        border-radius: 0px;
+    }
+    .heading{
+        margin-top: 10px;
+    }
+    .heading h1{
+        margin-left: 10px;
+    }
+    .heading p{
+        margin-left: 10px;
+    }
+}
+/* In CSS, if you want to ignore a parent's padding and have a child element ignore it, there are a few ways you can achieve this:
+
+Negative Margin: You can use negative margins on the child element to counteract the padding of the parent. For example, if the parent has padding: 10px;, you can apply margin: -10px; to the child element.
+.parent { 
+    padding: 10px; 
+} 
+ 
+.child { 
+    margin: -10px; 
+}  */
