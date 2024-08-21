@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+body{
+    background: hsl(221, 100%, 96%);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.card-container{
+display: flex;
+width: 500px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 3px 2px 2px rgba(0,0,0,0.1);
+}
+.left-card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+    border-radius: 18px;
+}
+.right-card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0));
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 1px -1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #3633ff;
+}
+.left-card h4{
+    color: hsl(241, 100%, 89%);
+}
+.circle h1{
+    color: white;
+    font-size: 45px;
+}
+.circle h5{
+    color: hsl(241, 100%, 89%);
+}
+.left-card h3{
+    color: white;
+    letter-spacing: 1px;
+}
+.left-card p{
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+    font-weight: 400;
+}
+/* Right Card */
+.right-card{
+    padding: 25px;
+}
+.marks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 15px;
+}
+.reaction,
+.memory,
+.visual,
+.verbal
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    border-radius: 10px;
+
+}
+.reaction{
+    background:  hsla(0, 80%, 96%, 0.603);
+}
+.memory{
+   background: hsla(40, 75%, 95%, 0.895);
+}
+.visual{
+  background:  hsla(232, 100%, 97%, 0.97);
+}
+.verbal{
+    background: hsla(165, 100%, 95%, 0.941);
+}
+.r-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+}
+.reaction .r-left{
+    color: hsl(0, 100%, 67%);
+}
+.memory .r-left{
+    color: hsl(39, 100%, 56%);
+}
+.verbal .r-left{
+    color: hsl(166, 100%, 37%);
+}
+.visual .r-left{
+    color: hsl(234, 85%, 45%);
+}
+
+
+
+.bb{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.mm{
+    color: hsl(222, 12%, 56%);
+    font-weight: 500;
+
+}
+.right-card button{
+    background: hsl(224, 30%, 27%);
+   margin-top: 30px;
+   border: none;
+   outline: none;
+   padding: 10px 15px;
+   border-radius: 25px;
+   color: white;
+   cursor: pointer;
+   transition: all 0.4s ease-in-out;
+}
+.right-card button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+/* responsive  */
+@media screen and (width < 600px){
+    .card-container{
+        flex-direction: column;
+       align-items: center;
+    }
+    body{
+        
+    } 
+}
