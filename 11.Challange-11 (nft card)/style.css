@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* Change font */
+/* Unable to add sky color overlay hover effect over image */
+/* See the solution */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(217, 54%, 11%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+.container{
+  background: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  gap: 15px;
+}
+.img-container {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+   
+}
+.img-container .main-img{
+    width: 100%;
+}
+.img-container .view-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 18%;
+    width: 18%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.img-container .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 12px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.img-container:hover .overlay{
+    opacity: 0.5;
+}
+.img-container:hover .overlay + .view-icon{
+  display: block;
+}
+
+
+
+
+/*  */
+
+.container img{
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.container h3{
+    font-size: 22px;
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.container h3:hover{
+    color:  hsl(178, 100%, 50%);
+}
+.container p{
+    color: hsl(215, 51%, 70%);
+    line-height: 1.4;
+    font-size: 17px;
+}
+hr{
+    color: red;
+}
+/* coin */
+.coin{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.coin .eth{
+    color:  hsl(178, 100%, 50%);
+}
+.coin .days{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+/* Profile */
+.profile{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.profile img{
+    height: 40px;
+    width: 40px;
+}
+.profile img{
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile h4{
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+.profile .name{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.profile .name:hover{
+    color:  hsl(178, 100%, 50%);
+
+}
+/* divider */
+.divider{
+    border: 1px solid hsl(215, 32%, 27%);
+}
+/*  */
+.f1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.f1 img{
+    height: 18px;
+    width: 18px;
+}
